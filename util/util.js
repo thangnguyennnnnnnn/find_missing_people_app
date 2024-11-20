@@ -14,7 +14,7 @@ import {Jimp as Jimp} from "jimp";
     try {
       const photo = await Jimp.read(inputURL);
       const outpath =
-        "tmp/filtered." + Math.floor(Math.random() * 2000) + ".jpg";
+        "/tmp/filtered." + Math.floor(Math.random() * 2000) + ".jpg";
       await photo.resize({w: 256,h: 256})
       //await photo.quality(60); // set JPEG quality
       .greyscale() // set greyscale
